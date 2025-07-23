@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise Detail</title>
+</head>
+<body>
+  <h1 id="title"></h1>
+  <p id="description"></p>
+  <img id="image" src="" alt="Exercise Image" width="300">
+  <br>
+  <video id="video" width="320" controls></video>
+  <br><br>
+  <a href="index.html">Back to list</a>
+
+  <script src="data.js"></script>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const exercise = exercises.find(e => e.id === id);
+
+    if (exercise) {
+      document.getElementById('title').textContent = exercise.name;
+      document.getElementById('description').textContent = exercise.description;
+      document.getElementById('image').src = `assets/${exercise.image}`;
+      console.log("Trying to load image:", `assets/${exercise.image}`);
+      document.getElementById('video').src = `assets/${exercise.video}`;
+    } else {
+      document.body.innerHTML = '<p>Exercise not found.</p>';
+    }
+  </script>
+</body>
+</html>

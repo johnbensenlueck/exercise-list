@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Exercise List</h1>
+  <ul id="exercise-list"></ul>
+
+  <script src="data.js"></script>
+  <script>
+    const list = document.getElementById('exercise-list');
+    exercises.forEach(ex => {
+      const item = document.createElement('li');
+      item.innerHTML = `<a href="exercise.html?id=${ex.id}">${ex.name}</a>`;
+      list.appendChild(item);
+    });
+  </script>
+</body>
+</html>
