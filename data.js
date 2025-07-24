@@ -10,14 +10,14 @@ const exercises = [
     id: "butt-kicks",
     name: "Butt Kicks",
     description: "A warm-up move that activates the hamstrings by kicking your heels toward your glutes.",
-    image: "butt-kicks.jpeg",
+    image: "butt-kicks.jpg",
     video: "butt-kicks.mp4"
   },
   {
     id: "leg-swings",
     name: "Leg Swings",
     description: "A dynamic stretch to loosen up the hips and hamstrings before a workout.",
-    image: "leg-swings.jpeg",
+    image: "leg-swings.jpg",
     video: "leg-swings.mp4"
   },
   {
