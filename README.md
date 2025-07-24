@@ -30,10 +30,6 @@ exercise-list/
 
 👉 [View it on GitHub Pages](https://johnbensenlueck.github.io/exercise-list/)
 
-## 📄 License
-
-This project is open source. Feel free to fork or contribute.
-
 ---
 
 > Developed by **John Bensen Lueck**  
